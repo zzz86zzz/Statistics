@@ -17,42 +17,42 @@ class StatsServiseTest {
     }
 
     @Test
-    void AverageSum() {
+    void averageSum() {
         StatsServise servise = new StatsServise();
         int[] purchases = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
-        int actual = servise.AverageSum(purchases);
+        int actual = servise.averageSum(purchases);
         assertEquals(15, actual);
 
     }
     @Test
-    void MaxMonthSales() {
+    void maxMonthSales() {
         StatsServise servise = new StatsServise();
         int[] purchases = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
-        int actual = servise.MaxMonthSales(purchases);
+        int actual = servise.maxMonthSales(purchases);
         assertEquals(8, actual);
 
     }
     @Test
-    void MinMonthSales() {
+    void minMonthSales() {
         StatsServise servise = new StatsServise();
         int[] purchases = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
-        int actual = servise.MinMonthSales(purchases);
+        int actual = servise.minMonthSales(purchases);
         assertEquals(9, actual);
 
     }
     @Test
-    void MonthBelowAverage() {
+    void monthBelowAverage() {
         StatsServise servise = new StatsServise();
         int[] purchases = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
-        int actual = servise.MonthBelowAverage(purchases);
+        int actual = servise.monthBelowAverage(purchases);
         assertEquals(5, actual);
 
     }
     @Test
-    void MonthAboveAverage() {
+    void monthAboveAverage() {
         StatsServise servise = new StatsServise();
         int[] purchases = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
-        int actual = servise.MonthAboveAverage(purchases);
+        int actual = servise.monthAboveAverage(purchases);
         assertEquals(5, actual);
 
     }
