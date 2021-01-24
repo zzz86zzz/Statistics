@@ -9,7 +9,7 @@ public class StatsServise {
         return sum;
     }
 
-    public int AverageSum(int[] purchases) {
+    public int averageSum(int[] purchases) {
         int months = 12;
         int sum = 0;
         int average = 0;
@@ -19,35 +19,35 @@ public class StatsServise {
         }
         return average;
     }
-    public int MaxMonthSales(int[] purchases) {
+    public int maxMonthSales(int[] purchases) {
         int month = 0;
-        int Counter = 0;
+        int counter = 0;
         int max = purchases[0];
         for (int purchase : purchases) {
-            Counter++;
+            counter++;
             if (max <= purchase){
                 max = purchase;
-                month = Counter;
+                month = counter;
             }
         }
         return month;
     }
-    public int MinMonthSales(int[] purchases) {
+    public int minMonthSales(int[] purchases) {
         int month = 0;
-        int Counter = 0;
+        int counter = 0;
         int min = purchases[0];
         for (int purchase : purchases) {
-            Counter++;
+            counter++;
             if (min >= purchase){
                 min = purchase;
-                month = Counter;
+                month = counter;
             }
         }
         return month;
     }
-    public int MonthBelowAverage ( int[] purchases){
+    public int monthBelowAverage ( int[] purchases){
         int mean = 0;
-        int average = AverageSum(purchases);
+        int average = averageSum(purchases);
         for (int purchase : purchases) {
             if (average > purchase){
                 mean++;
@@ -57,9 +57,9 @@ public class StatsServise {
         return mean;
 
     }
-    public int MonthAboveAverage ( int[] purchases){
+    public int monthAboveAverage ( int[] purchases){
         int mean = 0;
-        int average = AverageSum(purchases);
+        int average = averageSum(purchases);
         for (int purchase : purchases) {
             if (average < purchase){
                 mean++;
